@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="contact">
+        <h1>Hello, World!</h1>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div id="errorText" class="error-text"></div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="Email" class="item" autocomplete="off">
+                    <div id="error-txt" class="error-text">Email can,t be blank</div>
+                </div>
+            </div>
+
+            <!-- Corrected class name from "input box" to "input-box" -->
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <div id="error-txt" class="error-text"></div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div id="error-txt" class="error-text">messae can,t be blanke</div>
+                </div>
+            </div>
+
+            <!-- Corrected class name from "textarea-field" to "input-box" -->
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your message" class="item" autocomplete="off"></textarea>
+                <div id="error-txt" class="error-text"></div>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

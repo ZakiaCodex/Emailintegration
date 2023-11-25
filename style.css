@@ -1,0 +1,116 @@
+/* Add this style for the error text div */
+.error-text {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Resetting margin and padding to 0 for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #3498db;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    flex: 0 0 48%;
+}
+
+.field.item {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #3498db;
+    outline: none;
+    background: #ecf0f1;
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+    transition: border-color 0.3s;
+    border-radius: 8px;
+}
+.field.error.item {
+    border: 2px solid red;
+
+}
+.field.item::placeholder {
+    color: #999;
+}
+
+.field.item:focus {
+    border-color: #2980b9;
+}
+
+.textarea-field {
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid #3498db;
+    outline: none;
+    background: #ecf0f1;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s;
+    border-radius: 8px;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #999;
+}
+
+textarea:focus {
+    border-color: #2980b9;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
